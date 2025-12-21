@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# 🚀 High-Performance Pathfinding Visualizer (C++ & WebAssembly)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![C++](https://img.shields.io/badge/Backend-C++-red)
+![WASM](https://img.shields.io/badge/Powered%20By-WebAssembly-orange)
+![Vite](https://img.shields.io/badge/Bundler-Vite-purple)
 
-Currently, two official plugins are available:
+A high-performance algorithm visualizer that leverages **C++** and **WebAssembly (WASM)** to execute graph traversal algorithms up to **10x faster** than standard JavaScript implementations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Key Features
 
-## React Compiler
+- **C++ Powered Backend:** Core logic written in C++ and compiled to WASM using Emscripten for maximum efficiency.
+- **Real-Time Benchmarking:** Live stats dashboard showing execution time (ms), nodes visited, and path cost.
+- **Multiple Algorithms:**
+  - **A* Search (A-Star):** Intelligent heuristic-based pathfinding.
+  - **Dijkstra:** Guarantees the shortest path.
+  - **Bidirectional BFS:** Optimizes search by meeting in the middle.
+  - **Greedy Best-First:** Extremely fast, heuristic-heavy search.
+  - **BFS & DFS:** Fundamental graph traversal demonstrations.
+- **Interactive Grid:** Draw walls, move start/end nodes, and generate random mazes.
+- **Speed Control:** Adjust animation speed for deeper analysis.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, TypeScript, Vite
+- **Logic:** C++ (Standard Template Library)
+- **Compilation:** Emscripten (C++ → WASM)
+- **Styling:** CSS3 (Animations & Grid Layout)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 How to Run Locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/AdityaSirsalkar001/Pathfinding_Visualizer.git](https://github.com/AdityaSirsalkar001/Pathfinding_Visualizer.git)
+   cd Pathfinding_Visualizer
