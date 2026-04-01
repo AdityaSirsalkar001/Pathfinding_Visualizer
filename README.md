@@ -42,4 +42,8 @@ A high-performance algorithm visualizer that leverages **C++** and **WebAssembly
 
 3. **Run the development server**
    ```bash
+<<<<<<< HEAD
    npm run dev
+=======
+   npm run dev
+>>>>>>> 77c0bbbc3b3168d96a37e9d2f03bb3f24cda101d
