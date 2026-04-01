@@ -7,27 +7,27 @@
 ![WASM](https://img.shields.io/badge/Powered%20By-WebAssembly-orange)
 ![Vite](https://img.shields.io/badge/Bundler-Vite-purple)
 
-A high-performance algorithm visualizer that leverages **C++** and **WebAssembly (WASM)** to execute graph traversal algorithms up to **10x faster** than standard JavaScript implementations.
+A high-performance algorithm visualizer that leverages **C++** and **WebAssembly (WASM)** to execute graph traversal algorithms exceptionally faster than standard JavaScript implementations.
 
 ## ⚡ Key Features
 
-- **C++ Powered Backend:** Core logic written in C++ and compiled to WASM using Emscripten for maximum efficiency.
-- **Real-Time Benchmarking:** Live stats dashboard showing execution time (ms), nodes visited, and path cost.
+- **C++ Powered Backend:** Core logic written in C++ and compiled to WASM using Emscripten for maximum computational efficiency.
+- **Massive Scale:** Seamlessly handles and visualizes pathfinding across a dense 2,500-node grid (25x50).
+- **Real-Time Benchmarking:** Live UI dashboard displaying highly accurate sub-millisecond execution latency, utilizing a 50-run background stress test to demonstrate true WASM speed.
 - **Multiple Algorithms:**
   - **A* Search (A-Star):** Intelligent heuristic-based pathfinding.
   - **Dijkstra:** Guarantees the shortest path.
   - **Bidirectional BFS:** Optimizes search by meeting in the middle.
   - **Greedy Best-First:** Extremely fast, heuristic-heavy search.
   - **BFS & DFS:** Fundamental graph traversal demonstrations.
-- **Interactive Grid:** Draw walls, move start/end nodes, and generate random mazes.
-- **Speed Control:** Adjust animation speed for deeper analysis.
+- **Interactive Grid:** Draw custom wall configurations with click-and-drag mechanics, or instantly generate randomized obstacle distributions to test algorithm efficiency.
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, TypeScript, Vite
 - **Logic:** C++ (Standard Template Library)
 - **Compilation:** Emscripten (C++ → WASM)
-- **Styling:** CSS3 (Animations & Grid Layout)
+- **Styling:** Tailwind CSS
 
 ## 🚀 How to Run Locally
 
@@ -35,3 +35,11 @@ A high-performance algorithm visualizer that leverages **C++** and **WebAssembly
    ```bash
    git clone [https://github.com/AdityaSirsalkar001/Pathfinding_Visualizer.git](https://github.com/AdityaSirsalkar001/Pathfinding_Visualizer.git)
    cd Pathfinding_Visualizer
+
+2. **Install dependencies**
+   ```bash
+   npm install
+
+3. **Run the development server**
+   ```bash
+   npm run dev
